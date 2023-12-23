@@ -16,11 +16,33 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <div class="container">'
+    <div class="container">
         <div class="row">
-            <div class="col-6"
-            Welcome CRUD from view
+          <form action="/post-crud" method="POST">
+            <div class="form-row">
+                <div class="col-12 mt-3">Create a new book</div>
+                <div class="form-group col-md-6">
+                  <label for="exampleInputTitle1">Title</label>
+                  <input type="text" class="form-control" placeholder="Enter a book" name="title">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="exampleInputId1">ID Book</label>
+                  <input type="number" class="form-control" placeholder="Enter a number" name="Id_book">
+                </div>
+                <div class="form-group row">
+                  <label for="example-date-input" class="col-2 col-form-label">Publish Date</label>
+                  <div class="col-4">
+                    <input class="form-control" type="date" value="" id="start_date">
+                  </div>
+                  <label for="example-date-input" class="col-2 col-form-label">Last Modified Date</label>
+                  <div class="col-4">
+                    <input class="form-control" type="date" value="" id="date">
+                  </div>
+                </div>
+              </form>
+           </div>
+           <br><button type="submit" class="btn btn-primary">Submit</button></br>
         </div>
-    </div>
+    </div>  
 </body>
 </html>

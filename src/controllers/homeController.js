@@ -17,10 +17,16 @@ let getAboutPage = (req, res ) => {
 }
 
 let getCRUD = (req, res) => {
-    return res.render('crud.ejs');
+    return res.render('crud.ejs')
+}
+
+let postCRUD = (req, res) => {
+    console.log(req.body);
+    return res.send('post CRUD from server');
 }
 module.exports = {
     getHomePage: getHomePage,
     getAboutPage: getAboutPage,
-    getCRUD: getCRUD,
+    getCRUD :getCRUD,
+    postCRUD: postCRUD,
 }
